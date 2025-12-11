@@ -1,26 +1,174 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dhaval Sharma | Cybersecurity Portfolio</title>
-    <style>
-        body { font-family: Arial; margin: 20px; }
-        h1 { color: #2c3e50; }
-        a { color: #2980b9; text-decoration: none; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhaval Sharma | VAPT & Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Dhaval Sharma — Threat Modeling, VAPT, SOC, and Security Research." />
+  <meta property="og:title" content="Dhaval Sharma | VAPT Portfolio" />
+  <meta property="og:description" content="Threat Modeling, VAPT, SOC, Security Research." />
+  <meta property="og:type" content="website" />
+  https://fonts.googleapis.com
+  https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;800&display=swap
+  assets/css/styles.css
+  <!-- Icons -->
+  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
 </head>
+
 <body>
-    <h1>Welcome to My Cybersecurity Portfolio</h1>
-    <p>I specialize in Threat Modeling, SOC, and Security Research.</p>
-    <h2>Projects</h2>
-    <ul>
-        <li>projects/threat-model-webapp/Threat Modeling Web App</a></li>
-        <li>projects/soc-playbooks/SOC Playbooks</a></li>
-        <li>projects/pwd-auditor/Password Auditor Tool</a></li>
-        <li>projects/ctf-writeups/CTF Write-ups</a></li>
+  <!-- Matrix Canvas Background -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="brand"> <span class="logo">[</span> Dhaval <span class="accent">Sharma</span> <span class="logo">]</span> </div>
+    <nav>
+      #aboutAbout</a>
+      #skillsSkills</a>
+      #methodologyMethodology</a>
+      #projectsProjects</a>
+      #writeupsWrite-ups</a>
+      #certsCerts</a>
+      #contactContact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home" aria-label="hero">
+    <div class="hero-inner glass">
+      <h1 class="glow">VAPT & Threat Modeling</h1>
+      <p class="subtitle">
+        Cybersecurity Researcher | Offensive & Defensive Labs | STRIDE / DFDs
+      </p>
+      <div class="cta">
+        #projects<i class="fa-solid fa-terminal"></i> View Projects</a>
+        mailto:you@example.com<i class="fa-solid fa-paper-plane"></i> Contact</a>
+        docs/Dhaval_Sharma_Resume.pdf<i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+      </div>
+      <div class="terminal">
+        <span class="prompt">$</span> whoami <span class="cursor"></span>
+        <div class="typing">dhaval@security: researcher · threat-modeling · vapt</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2><i class="fa-solid fa-user-shield"></i> About</h2>
+    <p>
+      I’m Dhaval Sharma, a security researcher focused on <strong>Threat Modeling</strong>, <strong>VAPT</strong>,
+      and <strong>Detection Engineering</strong>. I love breaking systems to
+      understand them — and then building controls that actually reduce risk.
+    </p>
+    <ul class="bullets">
+      <li>Threat Modeling: STRIDE, DFDs, Attack Trees</li>
+      <li>AppSec: OWASP ASVS, API security, secure design reviews</li>
+      <li>Blue Team: SIEM (Splunk/ELK), Sigma, MITRE ATT&CK mapping</li>
+      <li>Cloud: Hardening AWS/Azure, IAM, logging</li>
     </ul>
-    <h2>Contact</h2>
-    <p>Email: you@example.com | <a href="https://linkedin.com/inkLinkedIn</a></p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2><i class="fa-solid fa-microchip"></i> Skills & Tools</h2>
+    <div class="chips">
+      <span class="chip">Burp Suite</span>
+      <span class="chip">OWASP ZAP</span>
+      <span class="chip">Nmap</span>
+      <span class="chip">Wireshark</span>
+      <span class="chip">Metasploit</span>
+      <span class="chip">Splunk</span>
+      <span class="chip">ELK</span>
+      <span class="chip">Python</span>
+      <span class="chip">Bash</span>
+      <span class="chip">Docker</span>
+      <span class="chip">AWS/Azure</span>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section id="methodology" class="section">
+    <h2><i class="fa-solid fa-route"></i> VAPT Methodology</h2>
+    <div class="timeline">
+      <div class="step">
+        <h3>1. Scoping & Rules of Engagement</h3>
+        <p>Define scope, assets, and constraints. Confirm authorization and objectives.</p>
+      </div>
+      <div class="step">
+        <h3>2. Recon & Threat Modeling</h3>
+        <p>Map assets, trust boundaries and threats (STRIDE); build DFDs and attack paths.</p>
+      </div>
+      <div class="step">
+        <h3>3. Vulnerability Discovery</h3>
+        <p>Manual & automated testing (OWASP, misconfigs, auth/session, input handling).</p>
+      </div>
+      <div class="step">
+        <h3>4. Exploitation & Validation</h3>
+        <p>Validate impact safely in controlled lab or with explicit consent.</p>
+      </div>
+      <div class="step">
+        <h3>5. Reporting & Remediation</h3>
+        <p>Risk rating, evidence, reproducible steps, prioritized fixes & retest plan.</p>
+      </div>
+      <div class="step">
+        <h3>6. Detection & Hardening</h3>
+        <p>Map to MITRE ATT&CK, add SIEM detections, logging, and security controls.</p>
+      </div>
+    </div>
+    <p class="note">⚠️ All activities performed in authorized environments only.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2><i class="fa-solid fa-flask"></i> Projects</h2>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="offensive">Offensive</button>
+      <button class="filter-btn" data-filter="defensive">Defensive</button>
+      <button class="filter-btn" data-filter="threat-modeling">Threat Modeling</button>
+    </div>
+
+    <div id="project-grid" class="grid"></div>
+
+    <p class="center small">
+      More on GitHub: https://github.com/your-usernamegithub.com/your-username</a>
+    </p>
+  </section>
+
+  <!-- Write-ups -->
+  <section id="writeups" class="section">
+    <h2><i class="fa-solid fa-pen-nib"></i> Write-ups</h2>
+    <ul class="links">
+      <li>#STRIDE in 90 Minutes — Practical Guide</a></li>
+      <li>#Detecting Credential Dumping with Sysmon + Sigma</a></li>
+      <li>#Cloud Hardening: S3 + IAM Case Study</a></li>
+    </ul>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs" class="section">
+    <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+    <div class="chips">
+      <span class="chip">Security+</span>
+      <span class="chip">eJPT</span>
+      <span class="chip">OSCP (in-progress)</span>
+      <span class="chip">AZ-500 / SC-200</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2><i class="fa-solid fa-paper-plane"></i> Contact</h2>
+    <p>Email: mailto:you@example.comyou@example.com</a> · LinkedIn: https://linkedin.com/in/your-link/in/your-link</a></p>
+    <p class="note">PGP: <code>FAKE-KEY-1234-REPLACE</code> <button class="btn tiny" id="copyPGP">Copy</button></p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Dhaval Sharma — Portfolio. For educational & authorized testing only.</p>
+  </footer>
+
+  assets/js/main.js</script>
 </body>
 </html>
-
